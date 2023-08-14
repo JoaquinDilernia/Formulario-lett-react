@@ -4,6 +4,7 @@ import { getFirestore, collection, getDocs, addDoc, doc, deleteDoc, getDoc, setD
 import { initializeApp } from "firebase/app";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import logo from '../public/bylett.png'
 
 const firebaseConfig = {
   apiKey: "AIzaSyCoxFcVBqJN--MvXQ96oOKDExrhRuUS9bQ",
@@ -86,7 +87,7 @@ function App() {
   return (
     <>
       <div className='contenedor-img'>
-        <img src="../public/bylett.png" alt="logo" />
+        <img src={logo}alt="logo" />
       </div>
       <main className='contenedor'>
         <section className='section'>
